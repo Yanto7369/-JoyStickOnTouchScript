@@ -1,3 +1,4 @@
 # -JoyStickOnTouchScript
-requirement  TouchScript
-recommended Joystick Pack
+require  TouchScript
+
+recommend Joystick Pack
