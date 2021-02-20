@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TouchScript.Gestures;
 using TouchScript.Gestures.TransformGestures;
+using TouchScript.Layers;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace JoyStickByTouchScript{
     [RequireComponent(typeof (ScreenTransformGesture), typeof ( LongPressGesture),typeof (TapGesture))]
+    [RequireComponent(typeof(StandardLayer))]
     public class Joystick : MonoBehaviour
     {
         public float Horizontal { get { return (snapX) ? SnapFloat(input.x, AxisOptions.Horizontal) : input.x; } }
